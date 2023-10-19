@@ -1,0 +1,18 @@
+package Exercise3;
+
+import java.util.Date;
+class Sales extends Employee {
+    private int salesMade;
+
+    public Sales(String name, double salary, Date dateOfBirth, int salesMade) {
+        super(name, salary, dateOfBirth);
+        this.salesMade = salesMade;
+    }
+
+    public void information() {
+        System.out.println("Salesperson: " + getName());
+        System.out.println("Salary: $" + getSalary());
+        System.out.println("Date of Birth: " + getDateOfBirth());
+        System.out.println("Sales Made: " + salesMade);
+    }
+}
