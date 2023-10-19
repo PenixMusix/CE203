@@ -1,0 +1,18 @@
+package Exercise3;
+
+import java.util.Date;
+class Development extends Employee {
+    private String programmingLanguage;
+
+    public Development(String name, double salary, Date dateOfBirth, String programmingLanguage) {
+        super(name, salary, dateOfBirth);
+        this.programmingLanguage = programmingLanguage;
+    }
+
+    public void information() {
+        System.out.println("Developer: " + getName());
+        System.out.println("Salary: $" + getSalary());
+        System.out.println("Date of Birth: " + getDateOfBirth());
+        System.out.println("Programming Language: " + programmingLanguage);
+    }
+}
