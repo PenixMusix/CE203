@@ -1,0 +1,18 @@
+package Exercise3;
+
+import java.util.Date;
+class Manager extends Employee {
+    private int teamSize;
+
+    public Manager(String name, double salary, Date dateOfBirth, int teamSize) {
+        super(name, salary, dateOfBirth);
+        this.teamSize = teamSize;
+    }
+
+    public void information() {
+        System.out.println("Manager: " + getName());
+        System.out.println("Salary: $" + getSalary());
+        System.out.println("Date of Birth: " + getDateOfBirth());
+        System.out.println("Team Size: " + teamSize);
+    }
+}
