@@ -1,0 +1,8 @@
+package shapes;
+
+public class RedRectangle extends Rectangle {
+    public RedRectangle(int x, int y, int width, int height) {
+        super(x, y, width, height);
+        this.color ="red";
+    }
+}
