@@ -1,0 +1,16 @@
+package Exercise3;
+
+import java.util.Date;
+public class EmployeeManagementSystem {
+    public static void main(String[] args) {
+        Employee manager = new Manager("John Manager", 60000, new Date(), 10);
+        Employee salesperson = new Sales("Alice Sales", 50000, new Date(), 50);
+        Employee developer = new Development("Bob Developer", 70000, new Date(), "Java");
+
+        manager.information();
+        System.out.println("-------------");
+        salesperson.information();
+        System.out.println("-------------");
+        developer.information();
+    }
+}
